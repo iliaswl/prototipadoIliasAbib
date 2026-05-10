@@ -22,10 +22,10 @@ function bookCard(book) {
 const screens = {
   home: () => `${header("Hola, Laura", "Tu lectura está lista para continuar")}
     <div class="content">
-      <section class="card hero"><div class="row"><div class="icon">📖</div><div class="grow"><div class="title">Seguir donde lo dejé</div><div class="subtitle">Sombras en la Biblioteca · capítulo 4 · 42%</div><button class="button" onclick="go('reader')" style="margin-top:14px">Continuar lectura</button></div></div></section>
+      <section class="card hero"><div class="row"><div class="icon"></div><div class="grow"><div class="title">Seguir donde lo dejé</div><div class="subtitle">Sombras en la Biblioteca · capítulo 4 · 42%</div><button class="button" onclick="go('reader')" style="margin-top:14px">Continuar lectura</button></div></div></section>
       <section class="grid-2"><button class="action-card dark" onclick="go('discover')"><div class="big">⌕</div><div class="title">Descubrir libros</div><div class="small">Filtros y recomendaciones</div></button><button class="action-card" onclick="go('audio')"><div class="big">🎧</div><div class="title">Escuchar audio</div><div class="small">Controles grandes</div></button></section>
       <section><div class="section-title"><h2>Recomendado para ti</h2><button class="link" onclick="go('results')">Ver todo</button></div>${bookCard(books[0])}</section>
-      <section class="card"><div class="row"><div class="icon">☁️</div><div><div class="title">Modo offline preparado</div><div class="subtitle">Contenido listo para trayectos sin conexión.</div></div></div></section>
+      <section class="card"><div class="row"><div class="icon"></div><div><div class="title">Modo offline preparado</div><div class="subtitle">Contenido listo para trayectos sin conexión.</div></div></div></section>
     </div>`,
 
   discover: () => `${header("Descubrir", "Busca por tema, género o estado de ánimo")}
@@ -43,7 +43,7 @@ const screens = {
     <div class="meta"><span>Idioma: Español</span><span>Duración: 3 h 20 min</span><span>Nivel: Fácil</span><span>Texto/audio</span><span>Sin spoilers</span></div>
     <section class="info-box"><h3>Recomendación explicada</h3><p>Te lo sugerimos porque has filtrado misterio, duración corta y lectura nocturna.</p></section>
     <section class="grid-2"><button class="button" onclick="go('reader')">📖 Leer</button><button class="button light" onclick="go('audio')">🎧 Escuchar</button></section>
-    <button class="button warn" onclick="go('library')">🔖 Guardar en mi biblioteca</button></div>`,
+    <button class="button warn" onclick="go('library')">Guardar en mi biblioteca</button></div>`,
 
   reader: () => `<div class="reader"><div class="screen-inner">${header("Modo lectura", "Capítulo 4 · Progreso guardado", "detail")}
     <div class="content"><section class="reader-tools"><button class="reader-tool">Tamaño</button><button class="reader-tool">Modo noche</button><button class="reader-tool">Marcador</button><button class="reader-tool">Offline</button></section>
